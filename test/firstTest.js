@@ -4,6 +4,7 @@
  *
  ** Description: Testing to the pase
  *? https://lambdatest.github.io/sample-todo-app/
+ *! to run : npx mocha -no-timeouts 'test/*.js' o npx test
  */
 const { Builder, By, Key } = require("selenium-webdriver");
 const assert = require("assert");
@@ -39,7 +40,3 @@ describe("add to do test", function () {
   });
   //
 });
-
-async function example() {
-  //close the browser
-}
