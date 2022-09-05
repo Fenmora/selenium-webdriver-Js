@@ -33,7 +33,7 @@ describe("add to do test", function () {
       });
 
     //assert using chai should
-    todoText.should.equal("Fender Mora - Selenium");
+    todoText.should.equal("Fender - Selenium");
 
     //Close Browser
     await driver.quit();
