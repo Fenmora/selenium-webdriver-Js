@@ -23,7 +23,7 @@ describe("add to do test", function () {
     //add a todo
     await driver
       .findElement(By.id("sampletodotext"))
-      .sendKeys("Fender Mora - Selenium", Key.RETURN);
+      .sendKeys("Fender - Selenium", Key.RETURN);
 
     let todoText = await driver
       .findElement(By.xpath("//li[last()]"))

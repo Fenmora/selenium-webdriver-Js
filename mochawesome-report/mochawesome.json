@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 2,
-    "passes": 1,
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
-    "failures": 1,
-    "start": "2022-09-05T01:17:00.090Z",
-    "end": "2022-09-05T01:17:03.290Z",
-    "duration": 3200,
-    "testsRegistered": 2,
-    "passPercent": 50,
+    "failures": 0,
+    "start": "2022-09-22T03:39:20.462Z",
+    "end": "2022-09-22T03:39:27.443Z",
+    "duration": 6981,
+    "testsRegistered": 3,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9979a41c-6de5-4917-8b91-0e2633428436",
+      "uuid": "533e5806-6b10-4b97-9eb4-8d4e04246cb1",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ab6b31ee-4c52-4857-aea0-f3600a2d0529",
+          "uuid": "84ff470c-338d-4a46-88c1-6f80ac511300",
           "title": "add to do test",
           "fullFile": "/Users/Fender/Projects/Dev/Selenium/selenium-webdriver-Js/test/firstTest.js",
           "file": "/test/firstTest.js",
@@ -38,39 +38,35 @@
               "title": "successfully adds a todo application",
               "fullTitle": "add to do test successfully adds a todo application",
               "timedOut": false,
-              "duration": 1605,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 1677,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "// launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to out application\nawait driver.get(\"https://lambdatest.github.io/sample-todo-app/\");\n//add a todo\nawait driver\n  .findElement(By.id(\"sampletodotext\"))\n  .sendKeys(\"Fender Mora - Selenium\", Key.RETURN);\nlet todoText = await driver\n  .findElement(By.xpath(\"//li[last()]\"))\n  .getText()\n  .then(function (value) {\n    return value;\n  });\n//assert using chai should\ntodoText.should.equal(\"Fender - Selenium\");\n//Close Browser\nawait driver.quit();",
-              "err": {
-                "message": "AssertionError: expected 'Fender Mora - Selenium' to equal 'Fender - Selenium'",
-                "estack": "AssertionError: expected 'Fender Mora - Selenium' to equal 'Fender - Selenium'\n    at Context.<anonymous> (test/firstTest.js:36:21)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
-                "diff": "- Fender Mora - Selenium\n+ Fender - Selenium\n"
-              },
-              "uuid": "575c2355-9ec8-4b3e-8bcb-a000e5c324e6",
-              "parentUUID": "ab6b31ee-4c52-4857-aea0-f3600a2d0529",
+              "code": "// launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to out application\nawait driver.get(\"https://lambdatest.github.io/sample-todo-app/\");\n//add a todo\nawait driver\n  .findElement(By.id(\"sampletodotext\"))\n  .sendKeys(\"Fender - Selenium\", Key.RETURN);\nlet todoText = await driver\n  .findElement(By.xpath(\"//li[last()]\"))\n  .getText()\n  .then(function (value) {\n    return value;\n  });\n//assert using chai should\ntodoText.should.equal(\"Fender - Selenium\");\n//Close Browser\nawait driver.quit();",
+              "err": {},
+              "uuid": "55dac1e3-2d73-4d4b-ab18-4cdea31f3ada",
+              "parentUUID": "84ff470c-338d-4a46-88c1-6f80ac511300",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "575c2355-9ec8-4b3e-8bcb-a000e5c324e6"
+          "passes": [
+            "55dac1e3-2d73-4d4b-ab18-4cdea31f3ada"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1605,
+          "duration": 1677,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 2000
+          "_timeout": 10000
         },
         {
-          "uuid": "c0392a75-70bf-4d54-998b-e7796acc9471",
+          "uuid": "6bccc8e0-08a3-43fe-bcea-ab56f6137c5f",
           "title": "add to do test - Second Task",
           "fullFile": "/Users/Fender/Projects/Dev/Selenium/selenium-webdriver-Js/test/secondTest.js",
           "file": "/test/secondTest.js",
@@ -81,7 +77,7 @@
               "title": "successfully adds a todo application",
               "fullTitle": "add to do test - Second Task successfully adds a todo application",
               "timedOut": false,
-              "duration": 1592,
+              "duration": 1512,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -90,23 +86,62 @@
               "context": null,
               "code": "// launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to out application\nawait driver.get(\"https://lambdatest.github.io/sample-todo-app/\");\n//add a todo\nawait driver\n  .findElement(By.id(\"sampletodotext\"))\n  .sendKeys(\"Fender Mora - Selenium\", Key.RETURN);\nlet todoText = await driver\n  .findElement(By.xpath(\"//li[last()]\"))\n  .getText()\n  .then(function (value) {\n    return value;\n  });\n//assert using chai should\ntodoText.should.equal(\"Fender Mora - Selenium\");\n//Close Browser\nawait driver.quit();",
               "err": {},
-              "uuid": "deda0176-7301-42d0-b4a9-ca4d28c29a17",
-              "parentUUID": "c0392a75-70bf-4d54-998b-e7796acc9471",
+              "uuid": "e7dabad7-0586-466a-8800-b6e92a86d44e",
+              "parentUUID": "6bccc8e0-08a3-43fe-bcea-ab56f6137c5f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "deda0176-7301-42d0-b4a9-ca4d28c29a17"
+            "e7dabad7-0586-466a-8800-b6e92a86d44e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1592,
+          "duration": 1512,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 2000
+          "_timeout": 10000
+        },
+        {
+          "uuid": "cd354eb9-e74b-4db3-ad60-1ab85c017e3d",
+          "title": "searching in google",
+          "fullFile": "/Users/Fender/Projects/Dev/Selenium/selenium-webdriver-Js/test/thirdTest.js",
+          "file": "/test/thirdTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "searching in google",
+              "fullTitle": "searching in google searching in google",
+              "timedOut": false,
+              "duration": 3788,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var searchString = \"Automation testing with Selenium\";\n//To wait for browser to build and launch properly\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//To fetch http://google.com from the browser with our code.\nawait driver.get(\"http://google.com\");\n//To send a search query by passing the value in searchString.\nawait driver.findElement(By.name(\"q\")).sendKeys(searchString, Key.RETURN);\n//Verify the page title and print it\nvar title = await driver.getTitle();\nconsole.log(\"Title is:\", title);\n//It is always a safe practice to quit the browser after execution\nawait driver.quit();",
+              "err": {},
+              "uuid": "8b91b06d-73b5-4fcd-9c95-3a197d83e7df",
+              "parentUUID": "cd354eb9-e74b-4db3-ad60-1ab85c017e3d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8b91b06d-73b5-4fcd-9c95-3a197d83e7df"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3788,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
         }
       ],
       "passes": [],
@@ -116,12 +151,12 @@
       "duration": 0,
       "root": true,
       "rootEmpty": true,
-      "_timeout": 2000
+      "_timeout": 10000
     }
   ],
   "meta": {
     "mocha": {
-      "version": "10.0.0"
+      "version": "7.2.0"
     },
     "mochawesome": {
       "options": {
